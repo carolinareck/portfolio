@@ -1,5 +1,4 @@
 /* Geral */
-
 * {
     margin: 0;
     padding: 0;
@@ -10,33 +9,44 @@
 body {
     background-color: black;
     height: 100vh;
+}
+
+h2.titulo{
+    color: white;
+    font-size: 50px;
+    text-align: center;
 
 }
 
-.interface{
+h2.titulo span{
+    color: #0000ff;
+}
+
+.interface {
     max-width: 1280px;
     margin: 0 auto;
 }
 
-/* Cabeçalho */
-header{
-    padding: 40px 4x;
+.flex {
+    display: flex;
+}
 
+/* Cabeçalho */
+header {
+    padding: 40px 4%;
 }
 
 header > .interface {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
-header a{
+header a {
     color: #7d7d7d;
     text-decoration: none;
     display: inline-block;
     transition: .2s;
-
 }
 
 header nav ul {
@@ -48,21 +58,212 @@ header nav ul li {
     padding: 0 40px;
 }
 
-header .btn-contato button {
-    padding: 10px 40px;
-    font-size: 18;
-    font-weight: 700;
-    background-color: blue;
-    border: 0;
-    border-radius: 30px;
-    cursor: pointer;
-}
-
-header a:hover{
+header a:hover {
     color: #fff;
     transform: scale(1.08);
 }
 
-header .btn-contato button:hover{
-    box-shadow: 0px 0px 8px #blue;
+button:hover {
+    box-shadow: 0px 0px 8px #0000ff; 
+    transform: scale(1.08);
 }
+
+/* estilo topo */
+section.topo-do-site {
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1 {
+    color: #fff;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-do-site h1 span {
+    color: blue;
+}
+
+.topo-do-site p {
+    color: #fff;
+    margin: 40px 0px;
+}
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 30px;
+    }
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px; 
+    font-weight: 700;
+    background-color: #26269e;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/* ESPECIALIDADES */
+section.especialidades {
+    padding: 40px 4%;
+}
+
+section.especialidades .flex {
+    gap: 60px;
+}
+
+.especialidades .especialidades-box{
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.especialidades .especialidades-box:hover {
+    transform: scale(1.05);
+    transform-origin: 0 0; 
+    box-shadow: 0 0 8px #858484; 
+}
+
+.especialidades-box svg {
+    width: 70px;
+    height: 80px;
+    fill: #0000ff; 
+}
+
+.especialidades .especialidades-box h3 {
+    font-size: 28px;
+    margin: 15px 0px;
+}
+
+
+/* SOBRE */
+section.sobre{
+    padding: 80px 4%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+
+}
+
+.sobre .txt-sobre {
+    color: white;
+
+}
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom:30px;
+    
+}
+.sobre .txt-sobre h2 span{
+    color:#0000ff;
+    display: block; 
+
+
+}
+
+.sobre .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+
+.sobre .img-sobre img {
+    border: 5px solid #c0c0c4;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(181, 181, 182, 0.5);
+}
+
+.sobre .txt-sobre .btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color:#26269e;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition:.2s;
+}
+
+/* PORTIFOLIOO */
+
+section.portfolio{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px rgb(148, 148, 148);
+}
+
+section.portfolio .flex{
+    justify-content: space-around;
+    margin-top: 60px;
+ }
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-size:cover;
+    background-position: 100% 0%;
+    transition: 5s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+
+    
+} 
+
+.img-port:hover{
+    background-position: 100% 100%;
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: #66636367;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+@media screen and (max-width:1020px) {
+    .menu-desktop, .btn-contato{
+        display: none;
+    }
+    
+}
+
