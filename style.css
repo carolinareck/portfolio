@@ -18,6 +18,16 @@ h2.titulo{
 
 }
 
+.logo img {
+    width: 200px; 
+    height: auto; 
+    display: block; 
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
 h2.titulo span{
     color: #0000ff;
 }
@@ -86,7 +96,7 @@ section.topo-do-site .flex {
 }
 
 .topo-do-site h1 span {
-    color: blue;
+    color: #0000ff;
 }
 
 .topo-do-site p {
@@ -267,3 +277,43 @@ section.portfolio .flex{
     
 }
 
+
+
+
+.projetos {
+    text-align: left;
+    margin-top: 30px;
+    text color: white;
+    padding: 40px 4%;
+
+}
+
+.projetos h1 {
+    font-size: 2em;
+    color: white;
+}
+
+.projetos ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.projetos li {
+    margin-bottom: 10px;
+}
+
+.projetos a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    display: flex;
+    padding: 10px; /* Adiciona um espaçamento interno ao link */
+    border: 1px solid #070707; /* Adiciona uma borda para destacar os itens */
+    border-radius: 5px; /* Adiciona cantos arredondados à borda */
+    font-size: 1 em;
+}
+
+.projetos a:hover {
+    background-color: #4e03d8; /* Adiciona uma cor de fundo quando o mouse passa sobre o link */
+}
