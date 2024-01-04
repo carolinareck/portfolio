@@ -1,0 +1,113 @@
+
+
+
+
+/* pagina 2*/ 
+.projetos {
+    text-align: left;
+    margin-top: 30px;
+    text color: white;
+    padding: 40px 4%;
+
+}
+
+.projetos h1 {
+    font-size: 2em;
+    color: white;
+}
+
+.projetos ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.projetos li {
+    margin-bottom: 10px;
+}
+
+.projetos a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    display: flex;
+    padding: 10px; 
+    border: 1px solid #070707; 
+    border-radius: 5px;
+    font-size: 1 em;
+}
+
+.projetos a:hover {
+    background-color: #4e03d8; 
+}
+
+
+@media screen and (max-width: 1020px) {
+    /*GERAL*/
+  
+    .flex {
+      flex-direction: column;
+    }
+  
+    h2.titulo {
+      font-size: 35px;
+      line-height: 30px;
+    }
+    /* CABEÇALHO*/
+    .menu-desktop,
+    .btn-contato {
+      display: none;
+    }
+  
+    /* TITULO */
+    topo-do-site h1 {
+      font-size: 30px;
+    }
+  
+    section.topo-do-site {
+      padding: 20px 8%;
+    }
+  
+    .topo-do-site .img-topo-site img {
+      width: 100%;
+    }
+  
+    /* ESPECIALIDADES */
+    section.especialidades {
+      padding: 40px 10%;
+    }
+  
+    /* SOBRE */
+    section.sobre {
+      padding: 80px 8%;
+    }
+  
+    .sobre .txt-sobre h2 {
+      font-size: 35px;
+      text-align: center;
+    }
+  
+    .btn-social {
+      text-align: center;
+    }
+  
+    .img-sobre img {
+      width: 100%;
+    }
+  
+    /* PORTIFOLIOO */
+    section.portfolio {
+      padding: 80px 8%;
+    }
+  
+    .img-port {
+      width: 100%;
+      max-width: 360px;
+      margin: 0 auto;
+    }
+  
+    section.portfolio .flex {
+      gap: 60px;
+    }
+  }
+  
